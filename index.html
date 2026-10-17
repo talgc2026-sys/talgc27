@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TALGÇ'27 | Torbalı Anadolu Lisesi 1. Gençlik Çalıştayı</title>
+<meta name="description" content="TALGÇ'27 — Torbalı Anadolu Lisesi 1. Gençlik Çalıştayı, 3-4-5 Şubat 2027">
+<style>
+:root{--navy:#07162f;--navy2:#102b54;--gold:#d5ad62;--gold2:#f0d99d;--cream:#f7f3e9;--ink:#14233b;--muted:#68758a;--white:#fff;--line:rgba(213,173,98,.28);--shadow:0 18px 50px rgba(7,22,47,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}a{color:inherit}
+.nav{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(7,22,47,.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);color:#fff}
+.navin{max-width:1250px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:13px 24px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:900;letter-spacing:.6px}.brandmark{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;object-fit:cover}.brand span{color:var(--gold2)}.links{display:flex;gap:3px}.links a{padding:9px 12px;text-decoration:none;border-radius:8px;font-size:13px;font-weight:700;color:#eef4ff}.links a:hover{background:rgba(255,255,255,.09)}.menu{display:none;background:none;border:1px solid #557096;color:#fff;border-radius:8px;padding:7px 10px;font-size:20px}
+.hero{min-height:100vh;padding:135px 22px 80px;display:grid;place-items:center;text-align:center;color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 18%,#244e85 0,#0f2a52 35%,#061329 78%)}.hero:before,.hero:after{content:"";position:absolute;border:1px solid var(--line);border-radius:50%;pointer-events:none}.hero:before{width:720px;height:720px;top:-380px;left:50%;transform:translateX(-50%)}.hero:after{width:950px;height:950px;top:-500px;left:50%;transform:translateX(-50%);opacity:.45}
+.heroContent{position:relative;z-index:2;max-width:900px}.heroLogo{width:145px;height:145px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 0 0 8px rgba(213,173,98,.1),0 15px 45px rgba(0,0,0,.25);margin-bottom:22px}.eyebrow{color:var(--gold2);font-weight:900;letter-spacing:4px;text-transform:uppercase;font-size:13px}.hero h1{font-size:clamp(48px,8vw,92px);line-height:.92;margin:13px 0 12px;letter-spacing:-3px}.hero h2{font-size:clamp(20px,3vw,31px);font-weight:500;margin:0}.hero p{max-width:760px;margin:20px auto;color:#d9e5f7}.date{display:inline-flex;gap:9px;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.06);padding:10px 18px;border-radius:999px;font-weight:800;margin:10px 0}.actions{margin-top:16px}.btn{display:inline-block;padding:13px 20px;border-radius:999px;text-decoration:none;font-weight:900;margin:5px}.btn.gold{background:var(--gold);color:#07162f}.btn.outline{border:1px solid rgba(255,255,255,.3);color:#fff}.scroll{position:absolute;bottom:20px;font-size:12px;color:#b8c6da;letter-spacing:2px}
+.section{padding:90px 22px}.wrap{max-width:1180px;margin:auto}.sectionHead{text-align:center;max-width:750px;margin:0 auto 45px}.tag{display:inline-block;color:#8a6729;font-weight:900;letter-spacing:2px;text-transform:uppercase;font-size:12px}.section h2{font-size:clamp(31px,4vw,48px);margin:8px 0 12px;line-height:1.1}.lead{color:var(--muted);font-size:17px}
+.about{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:stretch}.card{background:#fff;border:1px solid #e9e3d6;border-radius:22px;padding:32px;box-shadow:var(--shadow)}.quote{background:var(--navy);color:#fff;position:relative;overflow:hidden}.quote:after{content:"✦";position:absolute;right:25px;top:15px;color:var(--gold);font-size:70px;opacity:.2}.quote p{font-size:21px;line-height:1.5}.quote small{color:#bdcbe0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:22px}.stat{background:#fff;border-radius:18px;padding:23px;text-align:center;border:1px solid #e9e3d6}.stat strong{display:block;font-size:31px;color:var(--navy)}.stat span{color:var(--muted);font-size:13px;font-weight:700}
+.schedule{background:#eef2f7}.days{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.day{background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);border:1px solid #dfe5ee}.daytop{padding:23px;background:var(--navy);color:#fff}.daytop b{color:var(--gold2);font-size:12px;letter-spacing:2px}.daytop h3{margin:5px 0 0;font-size:25px}.daybody{padding:25px}.time{display:flex;gap:15px;padding:14px 0;border-bottom:1px solid #edf0f4}.time:last-child{border-bottom:0}.time strong{min-width:66px;color:#8a6729}.venue{display:inline-block;margin-top:14px;background:#f5f1e7;color:#73551f;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:800}
+.committees{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.committee{min-height:170px;background:#fff;border:1px solid #e8e2d5;border-radius:20px;padding:25px;box-shadow:0 10px 30px rgba(7,22,47,.07);position:relative;overflow:hidden}.committee:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--navy),var(--gold))}.num{font-size:13px;font-weight:900;color:#8a6729}.committee h3{margin:10px 0 6px;font-size:20px}.committee p{margin:0;color:var(--muted);font-size:14px}
+.chairs{background:var(--navy);color:#fff}.chairgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.chair{border:1px solid rgba(213,173,98,.28);border-radius:20px;padding:30px;text-align:center;background:rgba(255,255,255,.04)}.chair .circle{width:80px;height:80px;border-radius:50%;margin:0 auto 15px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold2);font-weight:900;font-size:22px}.chair h3{margin:0;font-size:21px}.chair span{color:#b9c8dc;font-size:13px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:20px}.location{background:#fff;border:1px solid #e8e2d5;border-radius:20px;padding:28px}.location h3{margin-top:0}.address{color:var(--muted);min-height:70px}.maplink{display:inline-block;margin-top:12px;color:#8a6729;font-weight:900;text-decoration:none}
+.count{background:linear-gradient(135deg,#0a1934,#173963);color:#fff}.countgrid{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:25px}.unit{min-width:125px;padding:20px 18px;border:1px solid rgba(213,173,98,.3);border-radius:17px;background:rgba(255,255,255,.05);text-align:center}.unit strong{font-size:42px;display:block;color:var(--gold2);line-height:1}.unit span{font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#c2cee0}
+.contact{display:grid;grid-template-columns:1fr .8fr;gap:25px}.insta{background:var(--navy);color:#fff;border-radius:22px;padding:34px}.insta a{color:var(--gold2);font-size:26px;font-weight:900;text-decoration:none}.footer{background:#050e20;color:#aebbd0;text-align:center;padding:35px 20px}.footer strong{color:#fff}.top{position:fixed;right:20px;bottom:20px;width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--navy);font-weight:900;text-decoration:none;box-shadow:0 10px 25px #0002}
+@media(max-width:900px){.links{display:none}.menu{display:block}.nav.open .links{display:flex;position:absolute;top:70px;left:0;right:0;background:var(--navy);flex-direction:column;padding:12px 20px}.about,.contact{grid-template-columns:1fr}.days{grid-template-columns:1fr}.committees{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.hero h1{letter-spacing:-1px}.stats{grid-template-columns:repeat(2,1fr)}.committees{grid-template-columns:1fr}.chairgrid{grid-template-columns:1fr}.section{padding:70px 17px}.navin{padding:11px 15px}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="navin">
+<a class="brand" href="#anasayfa"><img class="brandmark" src="logo.jpeg"><span>TALGÇ<span>'27</span></span></a>
+<button class="menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+<div class="links">
+<a href="#hakkinda">Hakkında</a><a href="#program">Program</a><a href="#komiteler">Komiteler</a><a href="#divan">Eş Başkanlar</a><a href="#konum">Konum</a><a href="#iletisim">İletişim</a>
+</div></div></nav>
+
+<header id="anasayfa" class="hero">
+<div class="heroContent">
+<img class="heroLogo" src="logo.jpeg" alt="TALGÇ'27 logosu">
+<div class="eyebrow">Torbalı Anadolu Lisesi</div>
+<h1>TALGÇ'27</h1>
+<h2>1. Gençlik Çalıştayı</h2>
+<div class="date">03 — 05 ŞUBAT 2027</div>
+<p>Gençlerin gündemi tartıştığı, tarihin dönüm noktalarını ele aldığı ve çözüm önerileri geliştirdiği üç günlük konferans.</p>
+<div class="actions"><a class="btn gold" href="#program">Programı İncele</a><a class="btn outline" href="#komiteler">Komiteleri Keşfet</a></div>
+</div><div class="scroll">AŞAĞI KAYDIR ↓</div>
+</header>
+
+<section id="hakkinda" class="section"><div class="wrap">
+<div class="sectionHead"><span class="tag">Çalıştay</span><h2>Hakkında & Amaç</h2><p class="lead">TALGÇ'27, öğrencilerin fikirlerini özgürce tartışabileceği ve çözüm odaklı çalışmalar ortaya koyabileceği üç günlük bir gençlik konferansıdır.</p></div>
+<div class="about">
+<div class="card"><h3>Gençlerin söz aldığı üç gün</h3><p>Torbalı Anadolu Lisesi 1. Gençlik Çalıştayı; lise öğrencilerinin ülke gündemini ve tarihin dönüm noktalarını tartışarak çözüm önerileri geliştirdiği üç günlük bir konferanstır.</p><p>Çalıştay boyunca farklı alanlara odaklanan komitelerde müzakere, fikir alışverişi ve ortak metin üretme süreçleri yürütülecek; üçüncü gün çalışmalar Genel Kurul'da buluşacaktır.</p></div>
+<div class="card quote"><p>“Fikirlerin tartışıldığı, çözüm önerilerinin şekillendiği ve gençlerin söz sahibi olduğu bir çalışma ortamı.”</p><small>TALGÇ'27 — Torbalı Anadolu Lisesi 1. Gençlik Çalıştayı</small></div>
+</div>
+<div class="stats"><div class="stat"><strong>3</strong><span>GÜN</span></div><div class="stat"><strong>7</strong><span>KOMİTE</span></div><div class="stat"><strong>2</strong><span>MEKÂN</span></div><div class="stat"><strong>09.00</strong><span>BAŞLANGIÇ</span></div></div>
+</div></section>
+
+<section id="sayac" class="section count"><div class="wrap" style="text-align:center"><span class="tag" style="color:var(--gold2)">Büyük buluşmaya</span><h2>Geri Sayım Başladı</h2><p>Çalıştay 3 Şubat 2027 saat 09.00'da başlayacak.</p><div class="countgrid">
+<div class="unit"><strong id="days">--</strong><span>Gün</span></div><div class="unit"><strong id="hours">--</strong><span>Saat</span></div><div class="unit"><strong id="mins">--</strong><span>Dakika</span></div><div class="unit"><strong id="secs">--</strong><span>Saniye</span></div>
+</div></div></section>
+
+<section id="program" class="section schedule"><div class="wrap">
+<div class="sectionHead"><span class="tag">03—05 Şubat 2027</span><h2>3 Günlük Program</h2><p class="lead">İlk iki gün komite oturumları, üçüncü gün Genel Kurul.</p></div>
+<div class="days">
+<article class="day"><div class="daytop"><b>1. GÜN · 03 ŞUBAT</b><h3>Komite Oturumları</h3></div><div class="daybody"><div class="time"><strong>09.00</strong><span>Açılış ve çalıştay başlangıcı</span></div><div class="time"><strong>Gün boyu</strong><span>Komite oturumları ve müzakereler</span></div><span class="venue">Torbalı Anadolu Lisesi</span></div></article>
+<article class="day"><div class="daytop"><b>2. GÜN · 04 ŞUBAT</b><h3>Komite Oturumları</h3></div><div class="daybody"><div class="time"><strong>Gün boyu</strong><span>Komite çalışmaları ve çözüm önerileri</span></div><div class="time"><strong>Gün sonu</strong><span>Komite metinlerinin tamamlanması</span></div><span class="venue">Torbalı Anadolu Lisesi</span></div></article>
+<article class="day"><div class="daytop"><b>3. GÜN · 05 ŞUBAT</b><h3>Genel Kurul</h3></div><div class="daybody"><div class="time"><strong>Genel</strong><span>Komite çalışmalarının Genel Kurul'a taşınması</span></div><div class="time"><strong>Final</strong><span>Genel Kurul görüşmeleri ve kapanış</span></div><span class="venue">Torbalı Belediyesi BKM Konferans Salonu</span></div></article>
+</div></div></section>
+
+<section id="komiteler" class="section"><div class="wrap">
+<div class="sectionHead"><span class="tag">Çalışma Alanları</span><h2>Komiteler</h2><p class="lead">Çalıştayın yedi ana komitesi farklı gündem başlıkları üzerinde çalışacaktır.</p></div>
+<div class="committees">
+<div class="committee"><span class="num">01</span><h3>Dışişleri Komitesi</h3><p>Uluslararası ilişkiler ve dış politika gündemleri.</p></div>
+<div class="committee"><span class="num">02</span><h3>Kültür ve Turizm Komitesi</h3><p>Kültür, sanat, miras ve turizm konuları.</p></div>
+<div class="committee"><span class="num">03</span><h3>Ekonomi Komitesi</h3><p>Ekonomik gündem ve sürdürülebilir kalkınma.</p></div>
+<div class="committee"><span class="num">04</span><h3>Sağlık Komitesi</h3><p>Sağlık politikaları ve toplum sağlığı.</p></div>
+<div class="committee"><span class="num">05</span><h3>Hukuk Komitesi</h3><p>Hukuk, adalet ve toplumsal düzen.</p></div>
+<div class="committee"><span class="num">06</span><h3>İnsan Hakları Komitesi</h3><p>Temel haklar, özgürlükler ve eşitlik.</p></div>
+<div class="committee"><span class="num">07</span><h3>Sanayi ve Teknoloji Komitesi</h3><p>Teknoloji, inovasyon ve sanayinin geleceği.</p></div>
+</div></div></section>
+
+<section id="divan" class="section chairs"><div class="wrap">
+<div class="sectionHead"><span class="tag" style="color:var(--gold2)">Çalıştay Yönetimi</span><h2>Eş Başkanlar</h2><p class="lead" style="color:#bdcbe0">TALGÇ'27'nin üç eş başkanı.</p></div>
+<div class="chairgrid">
+<div class="chair"><div class="circle">DG</div><h3>Derin GÜNDÜZ</h3><span>Eş Başkan</span></div>
+<div class="chair"><div class="circle">MİA</div><h3>Mustafa İsmail AYDIN</h3><span>Eş Başkan</span></div>
+<div class="chair"><div class="circle">AEE</div><h3>Ayça Eda EKİCİ</h3><span>Eş Başkan</span></div>
+</div></div></section>
+
+<section id="konum" class="section"><div class="wrap">
+<div class="sectionHead"><span class="tag">Ulaşım</span><h2>Konum & Mekânlar</h2><p class="lead">İki farklı günde iki farklı mekânda buluşuyoruz.</p></div>
+<div class="info">
+<div class="location"><span class="tag">01 · Komite Günleri</span><h3>Torbalı Anadolu Lisesi</h3><p class="address">Alpkent Mahallesi 1022. Sokak No: 5, 35860 Torbalı / İzmir</p><a class="maplink" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Torbalı+Anadolu+Lisesi">Haritada Gör →</a></div>
+<div class="location"><span class="tag">02 · Genel Kurul</span><h3>Torbalı Belediyesi BKM Konferans Salonu</h3><p class="address">Muratbey Mahallesi 3564. Sokak No: 25, 35860 Torbalı / İzmir</p><a class="maplink" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Torbalı+Belediyesi+BKM+Konferans+Salonu">Haritada Gör →</a></div>
+</div></div></section>
+
+<section id="iletisim" class="section"><div class="wrap">
+<div class="sectionHead"><span class="tag">Bize Ulaşın</span><h2>İletişim</h2><p class="lead">TALGÇ'27 hakkında güncel duyurular ve gelişmeler için sosyal medya hesabımızı takip edin.</p></div>
+<div class="contact"><div class="card"><h3>Resmî Instagram</h3><p>Çalıştayın duyuruları, hazırlıkları ve etkinlik günlerinden içerikler için:</p><a class="maplink" href="https://instagram.com/talgc27" target="_blank">@talgc27 ↗</a></div>
+<div class="insta"><span>INSTAGRAM</span><h3>Güncel kal.</h3><a href="https://instagram.com/talgc27" target="_blank">@talgc27</a></div></div>
+</div></section>
+
+<footer class="footer"><strong>TALGÇ'27</strong> · Torbalı Anadolu Lisesi 1. Gençlik Çalıştayı<br><small>03—05 Şubat 2027 · Torbalı / İzmir</small></footer>
+<a class="top" href="#anasayfa" aria-label="Yukarı">↑</a>
+<script>
+const target = new Date("2027-02-03T09:00:00+03:00").getTime();
+function tick(){
+ let d=target-Date.now();
+ if(d<0)d=0;
+ document.getElementById("days").textContent=Math.floor(d/86400000);
+ document.getElementById("hours").textContent=String(Math.floor(d/3600000)%24).padStart(2,"0");
+ document.getElementById("mins").textContent=String(Math.floor(d/60000)%60).padStart(2,"0");
+ document.getElementById("secs").textContent=String(Math.floor(d/1000)%60).padStart(2,"0");
+}
+tick();setInterval(tick,1000);
+document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("nav").classList.remove("open")));
+</script>
+</body></html>
